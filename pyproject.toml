@@ -1,0 +1,18 @@
+[project]
+name = "psi-lab3"
+version = "1.0.0"
+description = "Лабораторная работа №3: конвертер валют по курсу Национального банка Молдовы (CustomTkinter)"
+requires-python = ">=3.11"
+dependencies = [
+    "customtkinter>=5.2",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+# --capture=sys: перехват вывода на уровне файловых дескрипторов мешает
+# Tcl 9 в Windows читать свои файлы — UI-тесты изредка падали бы.
+addopts = "--import-mode=importlib --capture=sys"
