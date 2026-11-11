@@ -1,7 +1,7 @@
 """«Обмен валют» — конвертер по официальному курсу Национального банка Молдовы.
 
 Запуск:
-    python lab3/main.py
+    python main.py
 """
 
 from tkinter import messagebox
